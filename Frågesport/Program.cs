@@ -6,6 +6,7 @@ namespace Frågesport
     {
         static void Main(string[] args)
         {
+            int x = 10;
             string fråga1 = "";
 
             while (fråga1 != "a" && fråga1 != "b" && fråga1 != "c")
@@ -16,20 +17,21 @@ namespace Frågesport
                 fråga1 = Console.ReadLine();
             }
 
-            if (fråga1 = "b")
+            string fråga2 = Console.ReadLine();
+
+            if (fråga2 = "B")
             {
-                Console.WriteLine("Det var rätt! Du har just nu "x" poäng");
+                Console.WriteLine("Det var rätt! Du har just nu x poäng");
             }
 
-            Console.ReadLine();
 
-             else if (fråga1 != "b")
-
+            else if (fråga2 != "B")
             {
-                Console.WriteLine("Det var fel! Du har just nu poäng);
+                Console.WriteLine("Det var fel! Du har just nu x poäng");
             }
 
-            Console.ReadLine();
+
+
 
 
 
