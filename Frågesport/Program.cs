@@ -15,6 +15,7 @@ namespace Frågesport
                 Console.WriteLine("vad heter jag");
                 fråga1 = Console.ReadLine();
             }
+
             if (fråga1 = "b")
             {
                 Console.WriteLine("Det var rätt! Du har just nu "x" poäng");
