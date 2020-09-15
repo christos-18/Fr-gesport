@@ -6,32 +6,42 @@ namespace Frågesport
     {
         static void Main(string[] args)
         {
-            int x = 10;
-            string fråga1 = "";
+            int poäng = 0;
 
-            while (fråga1 != "a" && fråga1 != "b" && fråga1 != "c")
+
+
+            Console.WriteLine("vad heter jag?");
+
+            string svar1 = Console.ReadLine();
+
+
+            while (svar1 != "a" && svar1 != "b" && svar1 != "c")
 
 
             {
                 Console.WriteLine("vad heter jag");
-                fråga1 = Console.ReadLine();
+
+                svar1 = Console.ReadLine();
+
             }
 
-            string fråga2 = Console.ReadLine();
-
-            if (fråga2 = "B")
+            if (svar1 == "b")
             {
-                Console.WriteLine("Det var rätt! Du har just nu x poäng");
+                poäng++;
+                Console.WriteLine("Det var rätt, du har just nu " + poäng + " poäng");
             }
 
-
-            else if (fråga2 != "B")
+            else if (svar1 != "b")
             {
-                Console.WriteLine("Det var fel! Du har just nu x poäng");
+                Console.WriteLine("Det var fel, du har just nu " + poäng + " poäng");
             }
 
 
 
+
+
+
+            Console.ReadLine();
 
 
 
