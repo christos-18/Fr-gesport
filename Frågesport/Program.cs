@@ -19,7 +19,7 @@ namespace Frågesport
 
 
             {
-                Console.WriteLine("vad heter jag");
+                Console.WriteLine("vad heter jag: ");
 
                 svar1 = Console.ReadLine();
 
