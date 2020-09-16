@@ -6,9 +6,13 @@ namespace Frågesport
     {
         static void Main(string[] args)
         {
+
+
             int poäng = 0;
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Black;
+
+
 
             //FRÅGA1
 
@@ -33,25 +37,25 @@ namespace Frågesport
             if (svar1 == "a")
             {
                 poäng++;
-                Console.WriteLine("Det var rätt, du har just nu " + poäng + " poäng");
+                Console.WriteLine("Det var rätt, du har just nu " + poäng + " poäng", Console.ForegroundColor = ConsoleColor.Green);
             }
 
             else if (svar1 != "a")
             {
-                Console.WriteLine("Det var fel, du har just nu " + poäng + " poäng");
+                Console.WriteLine("Det var fel, du har just nu " + poäng + " poäng", Console.ForegroundColor = ConsoleColor.Red);
             }
 
             Console.WriteLine("\n");
 
 
 
-            Console.WriteLine("Vill du fortsätta till nästa fråga? \n  \n ja eller nej ");
+            Console.WriteLine("Vill du fortsätta till nästa fråga? \n  \n ja eller nej ", Console.ForegroundColor = ConsoleColor.Black);
             string vidare = Console.ReadLine();
 
             while (vidare != "ja" && vidare != "nej")
 
             {
-                Console.WriteLine("Vill du fortsätta till nästa fråga? \n  \n ja eller nej ");
+                Console.WriteLine("Vill du fortsätta till nästa fråga? \n  \n ja eller nej ", Console.ForegroundColor = ConsoleColor.Black);
                 vidare = Console.ReadLine();
             }
 
@@ -80,12 +84,12 @@ namespace Frågesport
                 if (svar2 == "b")
                 {
                     poäng++;
-                    Console.WriteLine("Det var rätt, du har just nu " + poäng + " poäng");
+                    Console.WriteLine("Det var rätt, du har just nu " + poäng + " poäng", Console.ForegroundColor = ConsoleColor.Green);
                 }
 
                 else if (svar2 != "b")
                 {
-                    Console.WriteLine("Det var fel, du har just nu " + poäng + " poäng");
+                    Console.WriteLine("Det var fel, du har just nu " + poäng + " poäng", Console.ForegroundColor = ConsoleColor.Red);
                 }
             }
 
@@ -99,12 +103,12 @@ namespace Frågesport
             Console.WriteLine("\n");
 
 
-            Console.WriteLine("Vill du fortsätta till nästa fråga? \n  \n ja eller nej ");
+            Console.WriteLine("Vill du fortsätta till nästa fråga? \n  \n ja eller nej ", Console.ForegroundColor = ConsoleColor.Black);
             string vidare2 = Console.ReadLine();
 
             while (vidare2 != "ja" && vidare2 != "nej")
             {
-                Console.WriteLine("Vill du fortsätta till nästa fråga? \n  \n ja eller nej ");
+                Console.WriteLine("Vill du fortsätta till nästa fråga? \n  \n ja eller nej ", Console.ForegroundColor = ConsoleColor.Black);
                 vidare2 = Console.ReadLine();
             }
 
@@ -133,12 +137,12 @@ namespace Frågesport
                 if (svar3 == "a")
                 {
                     poäng++;
-                    Console.WriteLine("Det var rätt, du har just nu " + poäng + " poäng");
+                    Console.WriteLine("Det var rätt, du har just nu " + poäng + " poäng", Console.ForegroundColor = ConsoleColor.Green);
                 }
 
                 else if (svar3 != "a")
                 {
-                    Console.WriteLine("Det var fel, du har just nu " + poäng + " poäng");
+                    Console.WriteLine("Det var fel, du har just nu " + poäng + " poäng", Console.ForegroundColor = ConsoleColor.Red);
                 }
             }
 
@@ -149,20 +153,9 @@ namespace Frågesport
 
             Console.WriteLine("\n");
 
-            Console.WriteLine("Du är nu färdig med frågesporten och fick " + poäng + " poäng", Console.ForegroundColor = ConsoleColor.Green);
+            Console.WriteLine("Du är nu färdig med frågesporten och fick " + poäng + " poäng", Console.ForegroundColor = ConsoleColor.Blue);
 
             Console.ReadLine();
-
-
-
-
-
-
-
-
-
-
-
 
 
 
