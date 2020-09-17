@@ -14,14 +14,19 @@ namespace Frågesport
             {
                 Console.WriteLine("Vill du spela igen, ja eller nej?", Console.ForegroundColor = ConsoleColor.Black);
 
+
                 string answer = Console.ReadLine();
                 if (answer.ToLower() == "ja")
                 {
                     RunGame();
                 }
-                else if (answer.ToLower() != "ja")
+                else if (answer.ToLower() == "nej")
                 {
                     System.Environment.Exit(0);
+                }
+                else
+                {
+                    Console.WriteLine("Ogiltigt svar! \n");
                 }
 
 
