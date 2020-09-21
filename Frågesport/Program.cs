@@ -6,11 +6,11 @@ namespace Frågesport
     {
         static void Main(string[] args)
         {
-
+            int continueplaying = 1;
 
             RunGame();
 
-            while (true)
+            while (continueplaying == 1)
             {
                 Console.WriteLine("Vill du spela igen, ja eller nej?", Console.ForegroundColor = ConsoleColor.Black);
 
@@ -18,11 +18,12 @@ namespace Frågesport
                 string answer = Console.ReadLine();
                 if (answer.ToLower() == "ja")
                 {
+                    Console.Clear();
                     RunGame();
                 }
                 else if (answer.ToLower() == "nej")
                 {
-                    System.Environment.Exit(0);
+                    continueplaying = 0;
                 }
                 else
                 {
@@ -31,6 +32,7 @@ namespace Frågesport
 
 
             }
+        }
 
 
 
@@ -197,6 +199,5 @@ namespace Frågesport
 
 
 
-        }
     }
 }
